@@ -16,26 +16,11 @@
   </p>
 
   <div class="card-container">
-    <a class="card" target="_blank" rel="noopener">      
-      <span><b>John Green</b></span>
-      <p class="card-text">Reconocido mayormente por sus libro Bajo la misma estrella​ y Ciudades de papel.</p>
+    <a *ngFor="let author of authors" class="card" target="_blank" rel="noopener">      
+      <span><b>{{author.name}}</b></span>
+      <p class="card-text">{{author.bio}}</p>
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
-    <a class="card" target="_blank" rel="noopener">      
-      <span><b>J. K. Rowling</b></span>
-      <p class="card-text">Conocida por ser la autora de la serie de libros Harry Potter.</p>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>  
-    <a class="card" target="_blank" rel="noopener">      
-      <span><b>Rainbow Rowell</b></span>
-      <p class="card-text">Sus novelas juveniles Eleanor & Park y Fangirl recibieron una gran cantidad de elogios.</p>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>  
-    <a class="card" target="_blank" rel="noopener">      
-      <span><b>Suzanne Collins</b></span>
-      <p class="card-text">Conocida internacionalmente por su trilogía de novelas de “Los Juegos Del Hambre”.</p>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>  
+    </a>      
   </div>
 
   <!-- Books -->
@@ -45,26 +30,11 @@
   </p>
 
   <div class="card-container">
-    <a class="card" target="_blank" rel="noopener">      
-      <span><b>Bajo la misma estrella</b></span>
-      <p class="card-text">Hazel tiene dieciséis años, está enferma de cáncer desde pequeña y sobrevive gracias a un pequeño milagro médico.</p>
+    <a *ngFor="let book of books" class="card" target="_blank" rel="noopener">      
+      <span><b>{{book.name}}</b></span>
+      <p class="card-text">{{book.description}}</p>
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
     </a>
-    <a class="card" target="_blank" rel="noopener">      
-      <span><b>Eleanor & Park</b></span>
-      <p class="card-text">La historia sigue narrativas duales de Eleanor y Park, dos inadaptados que vivieron en Omaha, Nebraska de 1986 a 1987.</p>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>  
-    <a class="card" target="_blank" rel="noopener">      
-      <span><b>Los juegos del hambre</b></span>
-      <p class="card-text">Doce chicos se ven obligados a participar en un reality show llamado Los Juegos del Hambre. Solo hay una regla: matar o morir.</p>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>  
-    <a class="card" target="_blank" rel="noopener">      
-      <span><b>Harry Potter</b></span>
-      <p class="card-text">Se describen las aventuras del joven aprendiz de magia Harry Potter y sus amigos durante los años que pasan en el Colegio Hogwarts.</p>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>  
   </div>
 
   <!-- Footer -->
